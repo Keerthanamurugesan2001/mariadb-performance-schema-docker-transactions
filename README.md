@@ -1,6 +1,19 @@
 # mariadb-performance-schema-docker-transactions
 To get the transaction list in mariadb with performance schema in docker container
 
+## Performance_schema
+The Performance Schema is a feature for monitoring MySQL server performance. It collects performance data and provides a way to inspect and analyze the server's performance. The data collected can include information about queries, memory usage, IO operations, and more.
+
+### Key Components
+The Performance Schema includes several key components, such as consumers, instruments, and setup tables:
+
+**Consumers**: These are mechanisms that store collected performance data. Examples include events_statements_current, events_statements_history, and events_statements_history_long.
+
+**Instruments**: These are points within the server code where performance data is collected. Instruments can be enabled or disabled.
+
+**Setup Tables**: These tables allow you to configure which instruments and consumers are active.
+
+
 ### To enable performance_schema 
 
 ```
